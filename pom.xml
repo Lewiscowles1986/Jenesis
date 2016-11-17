@@ -9,13 +9,9 @@
   <url>http://maven.apache.org</url>
   <repositories>
     <repository>
-      <id>swt-repo</id>
-      <url>https://swt-repo.googlecode.com/svn/repo/</url>
-    </repository>
-    <repository>
-        <id>jlibs-repository</id>
-        <name>JLibs Repository</name>
-        <url>http://dl.dropbox.com/u/326301/repository</url>
+        <id>maven-central</id>
+        <name>Maven Central Repository</name>
+        <url>http://central.maven.org/maven2/</url>
         <layout>default</layout>
     </repository>
   </repositories>
@@ -52,13 +48,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/in.jlibs/jlibs-core -->
     <dependency>
-        <groupId>jlibs</groupId>
-        <artifactId>jlibs-core</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <scope>compile</scope>
+      <groupId>in.jlibs</groupId>
+      <artifactId>jlibs-core</artifactId>
+      <version>2.2.1</version>
+      <scope>compile</scope>
     </dependency> 
   </dependencies>
+  <!-- https://mvnrepository.com/artifact/org.eclipse.swt/org.eclipse.swt* -->
   <profiles>
     <profile>
         <activation>
@@ -69,7 +67,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.cocoa.macosx.x86_64</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
@@ -79,7 +77,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.cocoa.macosx</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
@@ -89,7 +87,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
@@ -99,7 +97,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.gtk.linux.x86</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
@@ -109,7 +107,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
@@ -119,7 +117,7 @@
           <dependency>
             <groupId>org.eclipse.swt</groupId>
             <artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
-            <version>3.7.2</version>
+            <version>4.3</version>
           </dependency>
         </dependencies>
     </profile>
